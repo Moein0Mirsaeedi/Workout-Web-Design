@@ -26,13 +26,17 @@ nav {
   display: flex;
 }
 
-.brand-navbar a{
+.brand-navbar a {
   display: flex;
+  transition: all 200ms;
 }
 
 .brand-navbar span {
   color: white;
   margin-left: 10px;
+  transition: all 200ms;
+  font-size: 20px;
+
 }
 
 .logo-brand-navbar {
@@ -49,6 +53,20 @@ nav {
   top: -10px;
   /* border: #0e1646 1px solid; */
   box-shadow: white 0px 0px 48px -2px;
+  transition: all 400ms;
+}
+
+.brand-navbar a:hover > div {
+  transform: rotate(180deg);
+}
+
+.brand-navbar a:hover > span {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.brand-navbar a:hover {
+  flex-direction: row-reverse;
 }
 
 .menu-navbar {
@@ -87,10 +105,10 @@ nav {
   transition: all 200ms;
 }
 
-.btn-navbar a:hover{
-    background-color: rgba(200, 35, 137, 0);
+.btn-navbar a:hover {
+  background-color: rgba(200, 35, 137, 0);
   border: #c82389 2px solid;
-    color: #c82389;
+  color: #c82389;
 }
 
 .btn-menu-mobile {
