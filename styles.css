@@ -36,7 +36,6 @@ nav {
   margin-left: 10px;
   transition: all 200ms;
   font-size: 20px;
-
 }
 
 .logo-brand-navbar {
@@ -121,11 +120,13 @@ nav {
   font-size: 30px;
   transition: all 300ms;
   cursor: pointer;
+  transition: all 200ms;
 }
 
 .btn-menu-mobile ion-icon:hover {
   color: #c82389;
   font-size: 30px;
+  transform: rotate(90deg);
 }
 
 @media screen and (max-width: 1150px) {
@@ -157,4 +158,51 @@ nav {
   nav {
     padding: 30px 30px;
   }
+}
+
+.btn-menu-mobile .btn-menu {
+  display: grid;
+  grid-template-columns: 15px 15px;
+  grid-template-rows: 15px 15px;
+  gap: 2px;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.item1 {
+  border: white 2px solid;
+  border-radius: 2px;
+  transition: all 300ms;
+}
+
+.btn-menu-mobile .btn-menu .i1 {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.btn-menu-mobile .btn-menu .i2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.btn-menu-mobile .btn-menu .i3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.btn-menu-mobile .btn-menu .i4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.btn-menu-mobile .btn-menu:hover > .i1 {
+  transform: rotate(-90deg);
+}
+
+.btn-menu-mobile .btn-menu:hover > .i4 {
+  transform: rotate(-90deg);
+}
+
+.btn-menu-mobile .btn-menu:hover > .i2 {
+  transform: rotate(90deg);
+}
+
+.btn-menu-mobile .btn-menu:hover > .i3 {
+  transform: rotate(90deg);
 }
