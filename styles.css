@@ -212,7 +212,7 @@ nav {
 }
 
 header {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
   font-family: "Roboto", sans-serif;
   padding: 10px 70px;
 }
@@ -220,12 +220,12 @@ header {
 .div-header {
   display: grid;
   grid-template-columns: 55% 45%;
-  grid-template-rows: 100%;
+  grid-template-rows: 50% 50%;
   height: 100%;
 }
 
 .item-header {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1 / 1 / 3 / 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +239,6 @@ header {
 }
 
 .text-header h1 span {
-  font-size: 72px;
   background: -webkit-linear-gradient(#c82389, rgba(12, 157, 246, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -252,7 +251,7 @@ header {
 }
 
 .img-header {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-area: 1 / 2 / 3 / 3;
 }
 
 .btn-header {
@@ -262,7 +261,7 @@ header {
 
 .btn-header-1 {
   background: -webkit-linear-gradient(#c82389, rgba(12, 157, 246, 1));
-  padding: 12px 35px;
+  padding: 12px 37px;
   color: white;
   border-radius: 5px;
   font-weight: 500;
@@ -280,7 +279,6 @@ header {
   border-right: #c82389 2px solid;
   border-top: rgba(12, 157, 246, 1) 2px solid;
   border-left: rgba(12, 157, 246, 1) 2px solid;
-  padding: 12px 35px;
   color: rgba(12, 157, 246, 1);
 }
 .btn-header-1:hover > span {
@@ -288,14 +286,13 @@ header {
 }
 
 .btn-header-2 {
-  padding: 12px 20px;
+  padding: 12px 12px;
   color: #951c6c;
   border-radius: 5px;
   font-weight: 300;
   font-size: 18px;
   transition: all 200ms;
   border: #951c6d00 2px solid;
-
 }
 
 .btn-header-2 ion-icon {
@@ -306,4 +303,48 @@ header {
 .btn-header-2:hover {
   color: #fffeff;
   border: #951c6c 2px solid;
+}
+
+.img-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.div-img-header {
+  width: 80%;
+  height: 85%;
+  background-image: url(images/2.jpg);
+  background-size: cover;
+  border-radius: 100px 0 0 0;
+}
+
+@media screen and (max-width: 850px) {
+  .item-header {
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  .text-header h1 {
+  font-size: 45px;
+}
+.text-header p {
+  margin-top: 15px;
+
+}
+  .img-header {
+    display: none;
+  }
+  .div-img-header {
+    width: 100%;
+    height: 85%;
+    background-image: url(images/2.jpg);
+    background-size: cover;
+    border-radius: 100px 0 0 0;
+  }
+  .btn-header-2 {
+position: relative;
+top: 30px;
+}
+.btn-header-1{
+    margin-right: 0;
+}
 }
