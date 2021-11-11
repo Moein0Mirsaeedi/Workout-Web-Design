@@ -257,6 +257,7 @@ header {
 .btn-header {
   margin-top: 50px;
   width: 100%;
+  display: flex;
 }
 
 .btn-header-1 {
@@ -267,10 +268,11 @@ header {
   font-weight: 500;
   margin-right: 17px;
   transition: all 200ms;
-  /* border-bottom: rgba(255, 255, 255, 0) 2px solid; */
+  border-bottom: rgba(255, 255, 255, 0) 2px solid;
   border-right: rgba(255, 255, 255, 0) 2px solid;
-  /* border-top: rgba(255, 255, 255, 0) 2px solid; */
+  border-top: rgba(255, 255, 255, 0) 2px solid;
   border-left: rgba(255, 255, 255, 0) 2px solid;
+  width: max-content;
 }
 
 .btn-header-1:hover {
@@ -293,6 +295,7 @@ header {
   font-size: 18px;
   transition: all 200ms;
   border: #951c6d00 2px solid;
+  width: max-content;
 }
 
 .btn-header-2 ion-icon {
@@ -324,12 +327,11 @@ header {
     grid-area: 1 / 1 / 3 / 3;
   }
   .text-header h1 {
-  font-size: 45px;
-}
-.text-header p {
-  margin-top: 15px;
-
-}
+    font-size: 45px;
+  }
+  .text-header p {
+    margin-top: 15px;
+  }
   .img-header {
     display: none;
   }
@@ -340,11 +342,24 @@ header {
     background-size: cover;
     border-radius: 100px 0 0 0;
   }
-  .btn-header-2 {
-position: relative;
-top: 30px;
-}
-.btn-header-1{
+  .btn-header-1 {
     margin-right: 0;
+  }
+  .btn-header {
+    margin-top: 30px;
+  }
+  header {
+    position: relative;
+    top: -40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .btn-header-2 {
+      margin-top: 10px;
+  }
+  .btn-header {
+  display: flex;
+  flex-direction: column;
 }
 }
