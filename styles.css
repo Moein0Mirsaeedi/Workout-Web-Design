@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -94,7 +93,6 @@ nav {
 
 .menu-navbar ul li:hover > a {
   color: #c82389;
-
 }
 
 .btn-navbar a {
@@ -177,8 +175,6 @@ nav {
   transition: all 300ms;
 }
 
-
-
 .btn-menu-mobile .btn-menu .i1 {
   grid-area: 1 / 1 / 1 / 1;
 }
@@ -197,7 +193,6 @@ nav {
 
 .btn-menu-mobile .btn-menu:hover > .item1 {
   border: #c82389 2px solid;
-
 }
 
 .btn-menu-mobile .btn-menu:hover > .i1 {
@@ -214,4 +209,101 @@ nav {
 
 .btn-menu-mobile .btn-menu:hover > .i3 {
   transform: rotate(90deg);
+}
+
+header {
+  height: calc(100vh - 100px);
+  font-family: "Roboto", sans-serif;
+  padding: 10px 70px;
+}
+
+.div-header {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 100%;
+  height: 100%;
+}
+
+.item-header {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-header h1 {
+  font-weight: 500;
+  font-size: 55px;
+  color: white;
+}
+
+.text-header h1 span {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#c82389, rgba(12, 157, 246, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-header p {
+  margin-top: 30px;
+  font-weight: 200;
+  color: #ffffffc9;
+}
+
+.img-header {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.btn-header {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.btn-header-1 {
+  background: -webkit-linear-gradient(#c82389, rgba(12, 157, 246, 1));
+  padding: 12px 35px;
+  color: white;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-right: 17px;
+  transition: all 200ms;
+  /* border-bottom: rgba(255, 255, 255, 0) 2px solid; */
+  border-right: rgba(255, 255, 255, 0) 2px solid;
+  /* border-top: rgba(255, 255, 255, 0) 2px solid; */
+  border-left: rgba(255, 255, 255, 0) 2px solid;
+}
+
+.btn-header-1:hover {
+  background: -webkit-linear-gradient(#c8238900, rgba(12, 156, 246, 0));
+  border-bottom: #c82389 2px solid;
+  border-right: #c82389 2px solid;
+  border-top: rgba(12, 157, 246, 1) 2px solid;
+  border-left: rgba(12, 157, 246, 1) 2px solid;
+  padding: 12px 35px;
+  color: rgba(12, 157, 246, 1);
+}
+.btn-header-1:hover > span {
+  color: #c82389;
+}
+
+.btn-header-2 {
+  padding: 12px 20px;
+  color: #951c6c;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18px;
+  transition: all 200ms;
+  border: #951c6d00 2px solid;
+
+}
+
+.btn-header-2 ion-icon {
+  position: relative;
+  top: 3px;
+}
+
+.btn-header-2:hover {
+  color: #fffeff;
+  border: #951c6c 2px solid;
 }
